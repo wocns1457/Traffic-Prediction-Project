@@ -1,0 +1,45 @@
+<!--index.html-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- 합쳐지고 최소화된 최신 CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+    <!-- 부가적인 테마 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+    <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    
+    <meta charset="UTF-8">
+    &nbsp&nbsp<title>교통량 예측</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+  &nbsp&nbsp<h1>교통량 예측</h1>
+
+  &nbsp&nbsp<h4>spot_name 목록:</h4>
+  &nbsp&nbsp'종로구', '용산구', '중구', '은평구', '마포구', '도봉구', '서초구'<br><br/>
+  &nbsp&nbsp'노원구', '광진구', '중랑구', '동대문구', '성북구', '영등포구','강동구' <br><br/>
+  &nbsp&nbsp'동작구', '관악구', '금천구', '강서구', '양천구', '구로구','강남구'  <br><br/>
+  <br><br/>
+ 
+  &nbsp&nbsp 입력예시 : spot_name:종로구, 미세먼지:26, 초미세먼지:15, 오존:0.024, 이산화질소:0.015, 일산화탄소:0.5, 아황산가스:0.004, 시간:18<br><br/>
+    <form action="/" method="post">
+      &nbsp&nbsp spot_name : <input type="text" name="spot_name"> &nbsp&nbsp 미세먼지 : <input type="text" name="pm10"><br><br/>
+      &nbsp&nbsp 초미세먼지: <input type="text" name="pm25"> &nbsp&nbsp 오존 : <input type="text" name="O3"> <br><br/> 
+      &nbsp&nbsp 이산화질소 : <input type="text" name="NO2">&nbsp&nbsp 일산화탄소 : <input type="text" name="CO"> <br><br/> 
+      &nbsp&nbsp 아황산가스 : <input type="text" name="SO2"> &nbsp&nbsp 시간 : <input type="text" name="hour"><br><br/>
+      &nbsp&nbsp<input type="submit" value="예측하기"> 
+    </form>
+
+      <h4>입력 데이터 =></h4> 
+      &nbsp&nbspspot_name:{{spot_name}}, 미세먼지:{{pm10}}, 초미세먼지:{{pm25}}, 오존:{{O3}}, 이산화질소:{{NO2}}, 일산화탄소:{{CO}}, 아황산가스:{{SO2}}, 시간:{{hour}}<br><br/>
+      <h4> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 예측 교통량 : {{result}}</h4> 
+
+
+  </body>
+  <body>
+
+  </body>
+</html>
