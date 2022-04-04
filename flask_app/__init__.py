@@ -1,5 +1,3 @@
-
-     
 # app.py
 from flask import Flask, render_template, request
 from flask_app.prediction import pred

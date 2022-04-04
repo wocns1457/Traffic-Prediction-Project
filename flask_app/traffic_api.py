@@ -37,7 +37,6 @@ def trans_pred(data, result, logs, conn, cur):
 
         conn.commit()
 
-
 def table_init():
         
     host = 'Insert host'
