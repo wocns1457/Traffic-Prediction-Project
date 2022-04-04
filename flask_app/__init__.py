@@ -1,6 +1,6 @@
 
      
-# /app.py
+# app.py
 from flask import Flask, render_template, request
 from flask_app.prediction import pred
 #from flask_app.traffic_api import *

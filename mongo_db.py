@@ -107,7 +107,7 @@ class MONGODB_SETUP:
     def get_vol(self):
         docs = self.collection_vol.find({})
         return docs
-
+ 
 #mongo = MONGODB_SETUP(2021, 3, 1, 2021, 4, 1)
 
 
