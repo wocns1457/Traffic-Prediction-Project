@@ -7,10 +7,10 @@ from flask_app.prediction import pred
 
 import psycopg2
 
-host = 'castor.db.elephantsql.com'
-user = 'gogsmgwl'
-password = 'lN0is00UCbs5R38BI9VGS9P10bhWmxfo'
-database = 'gogsmgwl'
+host = 'Insert host'
+user = 'Insert user'
+password = 'Insert password'
+database = 'Insert database'
 
 conn = psycopg2.connect(
     host=host,

@@ -8,22 +8,22 @@ from datetime import date, timedelta
 class MONGODB_SETUP:
     def __init__(self, start_y, start_m, start_d, end_y, end_m, end_d):
 
-        self.KEY = '435a6c4d5a776f6338316b56545267'
+        self.KEY = 'Insert api key'
         self.TYPE = 'json'
         self.HOURS = ['00', '04', '08', '12', '16', '20']
 
         self.TEXT_FILENAME = '교통량지점정보.txt'
         self.TEXT_FILEPATH = os.path.join(os.getcwd(), self.TEXT_FILENAME)
 
-        self.HOST = 'cluster0.ukcyj.mongodb.net'
-        self.USER = 'wocns'
-        self.PASSWORD = 'wocns'
-        self.DATABASE_NAME = 'myFirstDatabase'
+        self.HOST = 'Insert Host'
+        self.USER = 'Insert user'
+        self.PASSWORD = 'Insert password'
+        self.DATABASE_NAME = 'Insert DB name'
         self.COLLECTION_VOL = 'VOL_LIST'
         self.COLLECTION_WEATHER = 'WEATHER_LIST'
 
-        self.MONGO_URI = f"mongodb+srv://{self.USER}:{self.PASSWORD}@{self.HOST}/{self.DATABASE_NAME}?retryWrites=true&w=majority"
-        self.API_KEY = 'mIsvU4QjRkvfk8ZfCJGmv7BUgY4wOxx7iJGtO7OyQdhPi0GR1E%2BAVlFFHeGNWs7O%2BzkCt2Q4RCcgn0tSDUe%2FOQ%3D%3D'
+        self.MONGO_URI = 'Insert URI'
+        self.API_KEY = 'Insert API KEY'
         
         self.start_date = date(start_y, start_m, start_d) 
         self.end_date = date(end_y, end_m, end_d) 

@@ -40,11 +40,11 @@ def trans_pred(data, result, logs, conn, cur):
 
 
 def table_init():
-    
-    host = 'castor.db.elephantsql.com'
-    user = 'gogsmgwl'
-    password = 'lN0is00UCbs5R38BI9VGS9P10bhWmxfo'
-    database = 'gogsmgwl'
+        
+    host = 'Insert host'
+    user = 'Insert user'
+    password = 'Insert password'
+    database = 'Insert database'
 
     conn = psycopg2.connect(
         host=host,
