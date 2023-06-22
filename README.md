@@ -1,9 +1,6 @@
 ## 서울시 지역구 교통량 예측 프로젝트
 서울시 지역구별 교통량 데이터와 대기환경 데이터를 사용하여 머신러닝 기법을 통해 교통량을 예측하는 Web API 서비스 배포 프로젝트입니다.  
 
-[Wep API sevice page](https://wocns-project.herokuapp.com/)  
-
-[발표 영상 링크](https://drive.google.com/file/d/1o93y4tuOQNzUpfmjFM8pMn-whN0tG-Fa/view?usp=sharing)
 ## 1. 데이터 선정 이유 및 문제 정의
 자동차에서 배기가스를 통해 발생되는 성분들의 대부분은 오존과 미세먼지등 대기오염에 큰 영향을 미치는 요소들 중 하나입니다.
 또한 교통량이 증가했다는 것은 배기가스를 통해 발생되는 성분들이 더 많아졌다는 것으로 대기오염의 문제로 이어지게 됩니다.
